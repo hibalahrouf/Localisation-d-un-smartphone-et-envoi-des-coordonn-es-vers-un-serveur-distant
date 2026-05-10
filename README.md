@@ -8,7 +8,7 @@ Une application Android connectée qui capte les coordonnées GPS et les enregis
 
 > 📹 **Démo**
 
-(https://github.com/user-attachments/assets/40512046-63fa-4900-accb-376b62007f0f)
+https://github.com/user-attachments/assets/40512046-63fa-4900-accb-376b62007f0f
 
 ---
 
