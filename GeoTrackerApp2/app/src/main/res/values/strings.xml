@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GeoTrackerApp</string>
+    <string name="gps_enabled">Provider %s is now active</string>
+    <string name="gps_disabled">Provider %s is now inactive</string>
+    <string name="gps_status_change">Provider %1$s changed status to: %2$s</string>
+    <string name="location_update">
+    New fix — Lat: %1$s | Lng: %2$s | Alt: %3$s | Accuracy: %4$s m
+</string>
+</resources>
