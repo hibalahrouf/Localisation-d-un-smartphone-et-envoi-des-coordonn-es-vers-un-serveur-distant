@@ -8,7 +8,7 @@ Une application Android connectée qui capte les coordonnées GPS et les enregis
 
 > 📹 **Démo**
 
-![Démo vidéo](placeholder_video_demo.gif)
+![Démo vidéo](https://github.com/user-attachments/assets/40512046-63fa-4900-accb-376b62007f0f))
 
 ---
 
@@ -16,7 +16,7 @@ Une application Android connectée qui capte les coordonnées GPS et les enregis
 
 | Application Android | Base de données (phpMyAdmin) |
 |---|---|
-| ![Capture application](placeholder_screenshot_app.png) | ![Capture base de données](placeholder_screenshot_db.png) |
+| ![Capture application](1.png) | ![Capture base de données](2.png) |
 
 ---
 
@@ -72,24 +72,6 @@ geotracker/                   ← dans le dossier htdocs/
 
 ---
 
-## Installation
-
-### Côté serveur
-1. Installer et démarrer **XAMPP** (Apache + MySQL)
-2. Placer le dossier `geotracker/` dans `htdocs/`
-3. Exécuter le script SQL dans phpMyAdmin pour créer la base et la table
-4. Tester avec Postman → `POST http://localhost/geotracker/saveGpsPoint.php`
-
-### Côté Android
-1. Ouvrir le projet dans **Android Studio**
-2. Définir l'URL du serveur dans `MainActivity.java` :
-   - Émulateur → `http://10.0.2.2/geotracker/saveGpsPoint.php`
-   - Vrai téléphone → `http://VOTRE_IP_LOCALE/geotracker/saveGpsPoint.php`
-3. Ajouter dans `AndroidManifest.xml` : `android:usesCleartextTraffic="true"`
-4. Compiler et lancer — accepter les permissions de localisation au premier démarrage
-
----
-
 ## Fonctionnement
 
 1. L'application demande une mise à jour GPS toutes les **45 secondes** ou tous les **100 mètres**
@@ -102,5 +84,3 @@ geotracker/                   ← dans le dossier htdocs/
 ## Remarques
 
 - `device_id` utilise `Settings.Secure.ANDROID_ID` (compatible Android 10+)
-- L'émulateur n'a pas de GPS réel — utiliser **Commandes étendues → Localisation** pour simuler une position
-- Le téléphone et le serveur doivent être sur le même réseau local lors de l'utilisation d'un vrai appareil
